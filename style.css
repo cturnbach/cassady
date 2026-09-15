@@ -55,6 +55,27 @@ body {
   color: #000000;
 }
 
+/* for link dropdown */
+.sidebar summary {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #0000ee;
+}
+
+.sidebar details[open] summary {
+  color: #000000;
+  text-decoration: none;
+}
+
+.sidebar .submenu {
+  list-style: none;
+  margin: 8px 0 0 0;
+  padding: 0 0 0 12px;
+}
+
+.sidebar .submenu li {
+  margin-bottom: 6px;
+}
 /* ---------------- Main content ---------------- */
 
 main {
