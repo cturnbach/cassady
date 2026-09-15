@@ -26,8 +26,8 @@ body {
 
 .sidebar {
    position: fixed;
-   top: 0;
-   left: 0;
+   top: 400px;
+   left: 40px;
   width: 200px;
    height: 100vh;
    overflow-y: auto;
@@ -36,7 +36,7 @@ body {
 }
 
 .sidebar h1 {
-  font-size: 12;
+  font-size: 15px;
   margin: 0 0 20px 0;
 }
 
@@ -82,14 +82,13 @@ body {
 /* ---------------- Main content ---------------- */
 
 main {
-   margin-left: 250px;
+   margin-left: 300px;
   padding: 60px 60px 60px 40px;
-  border-left: 0px solid #cccccc;
    max-width: 700px;
 }
 
 main h1 {
-  font-size: 12px;
+  font-size: 15px;
   margin-top: 0;
 }
 
