@@ -7,11 +7,11 @@
 body {
   background: #ffffff;
   color: #000000;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 16px;
+  font-family: Times, serif;
+  font-size: 12px;
   line-height: 1.5;
   margin: 0;
-  padding: 0;
+  padding: 100;
 }
 
 /* The page is just two columns: a sidebar and the content.
