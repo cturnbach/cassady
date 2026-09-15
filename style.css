@@ -1,0 +1,131 @@
+/* ============================================================
+   style.css
+   One shared stylesheet used by every page.
+   Edit colors/fonts here and it changes the whole site.
+   ============================================================ */
+
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* The page is just two columns: a sidebar and the content.
+   No boxes, no shadows, no rounded corners. */
+.layout {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+/* ---------------- Sidebar ---------------- */
+
+.sidebar {
+  width: 160px;
+  flex-shrink: 0;
+  padding: 40px 20px 40px 30px;
+}
+
+.sidebar h1 {
+  font-size: 18px;
+  margin: 0 0 20px 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 0 0 8px 0;
+}
+
+.sidebar a {
+  text-decoration: underline;
+}
+
+/* the link for the page you're currently on - not a link, just plain text */
+.sidebar .current {
+  color: #000000;
+}
+
+/* ---------------- Main content ---------------- */
+
+main {
+  padding: 40px 30px 40px 20px;
+  border-left: 1px solid #cccccc;
+}
+
+main h1 {
+  font-size: 22px;
+  margin-top: 0;
+}
+
+main h2 {
+  font-size: 18px;
+}
+
+/* ---------------- Links ---------------- */
+
+a {
+  color: #0000ee;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+/* ---------------- Misc ---------------- */
+
+hr {
+  border: none;
+  border-top: 1px solid #cccccc;
+  margin: 25px 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* simple photo/illustration grid - just images side by side, wrapping */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery img {
+  width: 200px;
+}
+
+/* blog post list */
+.post {
+  margin-bottom: 30px;
+}
+
+.post .date {
+  color: #666666;
+  font-size: 14px;
+}
+
+/* On narrow/mobile screens, stack the sidebar above the content */
+@media (max-width: 600px) {
+  .layout {
+    flex-direction: column;
+  }
+  main {
+    border-left: none;
+    border-top: 1px solid #cccccc;
+  }
+}
